@@ -12,7 +12,7 @@ Time spent: **20** hours spent in total
 ## Summary
 This app will be able to show images of recipes online and users can create a profile. The app will use an API online to pull images and recipes. The user will be able to provide a reaction to the recipe that they like.
 
-This document provides an overview, project spec, and wireframes for our team's capstone project: An app that **The app will have the option for users to create a custom profile where they can input their allergies and they browse through recipes**
+This document provides an overview, project spec, and wireframes for our team's capstone project: An app that **The app will have the option for users to create a custom profile where they can input their recipe and they browse through recipes**
 
 If we had to describe this milestone in three (3) emojis, they would be: **😃 😄 😁**
 
