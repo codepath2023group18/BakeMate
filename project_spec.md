@@ -62,7 +62,7 @@ Required Feature
 - **Setup user allergies**
   - => Filters recipies based on allergies
 - **Search Content**
-  - => Filter recipies based on user query
+  - => Filter recipes based on user query
 
 ## Wireframes
 
