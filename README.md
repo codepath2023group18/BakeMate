@@ -43,7 +43,7 @@ The following BONUS features are implemented:
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve your submission!
+- [ ] Add a chat option 
 
 ## Notes
 
