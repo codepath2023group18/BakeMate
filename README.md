@@ -5,7 +5,7 @@
 Submitted by:
 - **Fany Silva**
 - **Thao Duong**
-- **Adrian**
+- **Adrian Eastmond**
 
 Time spent: **20** hours spent in total
 
