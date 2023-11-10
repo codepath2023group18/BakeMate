@@ -11,26 +11,31 @@ import kotlinx.serialization.json.*
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var feedImageList: MutableList<String>
+    private lateinit var titleList: MutableList<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        // TODO("Create Feed Recycler")
+        //feedRecyclerView = findViewById(R.id.feed_images_list)
+        feedImageList = mutableListOf()
+        titleList = mutableListOf()
         getRedditData()
     }
 
     private fun getRedditData() {
         val client = AsyncHttpClient()
 
-        client["https://api.reddit.com/r/baking/new?limit=10", object :
+        client["https://api.reddit.com/r/baking/new?limit=50", object :
             JsonHttpResponseHandler() {
             override fun onSuccess(
                 statusCode: Int,
                 headers: Headers,
                 json: JsonHttpResponseHandler.JSON
             ) {
-                // Access a JSON object response with `json.jsonObject`
+                // Access a print JSON response and relevant Headers to log
                 Log.d("OBJECT", json.jsonObject.toString())
-                //Log.d("DEBUG RESPONSE", json.jsonArray.toString())
-                // Log.d("DEBUG RESPONSE", "$headers")
                 val rateLimitUsed = headers["x-ratelimit-used"]
                 val rateLimitRemaining = headers["x-ratelimit-remaining"]
                 val rateLimitReset = headers["x-ratelimit-reset"]
@@ -40,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                             "| rate limit reset (seconds) $rateLimitReset"
                 )
                 Log.d("RESPONSE", "$json")
-
+                // Parse Json for title and img url
                 val jsonString = json.jsonObject.toString()
                 val jsonObject = Json.parseToJsonElement(jsonString)
                 val dataObject = jsonObject?.jsonObject?.get("data")
@@ -50,12 +55,18 @@ class MainActivity : AppCompatActivity() {
                     for (childJsonObj in childrenArray) {
                         if (childJsonObj is JsonObject) {
                             val childDataObj = childJsonObj["data"]?.jsonObject
-                            val title = childDataObj?.get("title")?.jsonPrimitive?.content
-                            val url = childDataObj?.get("url")?.jsonPrimitive?.content
+                            val imgTitle = childDataObj?.get("title")?.jsonPrimitive?.content
+                            var imageUrl = childDataObj?.get("url")?.jsonPrimitive?.content
 
-                            Log.d("Parsing Json", "title: $title  | imageURL $url")
-//                            TODO("Filter text only urls")
-//                            TODO("Save valid text, url pairs for use in activity views")
+                            if (imageUrl?.startsWith("https://i.redd.it") == true) {
+                                feedImageList.add(imageUrl.toString())
+                                titleList.add(imgTitle.toString())
+                            } else {
+                                continue
+                            }
+
+                            Log.d("Parsing Json", "title: $title  | imageURL $imageUrl")
+
                         }
                     }
                 }
