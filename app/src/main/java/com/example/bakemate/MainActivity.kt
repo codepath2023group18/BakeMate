@@ -3,6 +3,8 @@ package com.example.bakemate
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
@@ -14,11 +16,11 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var feedImageList: MutableList<String>
     private lateinit var titleList: MutableList<String>
+    private  lateinit var feedRecyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // TODO("Create Feed Recycler")
-        //feedRecyclerView = findViewById(R.id.feed_images_list)
+        feedRecyclerView = findViewById(R.id.feed_images_list)
         feedImageList = mutableListOf()
         titleList = mutableListOf()
         getRedditData()
@@ -70,6 +72,9 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
+                val adapter = FeedAdapter(feedImageList , titleList)
+                feedRecyclerView.adapter = adapter
+                feedRecyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
             }
 
             override fun onFailure(
