@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
-import kotlinx.serialization.*
 import kotlinx.serialization.json.*
 
 
@@ -22,14 +21,27 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        // Feed Initialization
         feedRecyclerView = findViewById(R.id.feed_images_list)
         feedImageList = mutableListOf()
         titleList = mutableListOf()
         getRedditData()
-        val secondActbutton = findViewById<Button>(R.id.button1)
-        secondActbutton.setOnClickListener{
-            val Intent = Intent (this, Profile::class.java)
-            startActivity(Intent)
+        // Link buttons
+        // TODO(Link Recipies)
+        val profileButton = findViewById<Button>(R.id.profile_button)
+        profileButton.setOnClickListener{
+            val intent = Intent (this, Profile::class.java)
+            startActivity(intent)
+        }
+        val homeButton = findViewById<Button>(R.id.home_button)
+        homeButton.setOnClickListener{
+            val intent = Intent (this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        val recipiesButton = findViewById<Button>(R.id.recipes_button)
+        recipiesButton.setOnClickListener{
+            //val intent = Intent (this, TODO(Add link to recipes page)::class.java)
+            startActivity(intent)
         }
     }
 
