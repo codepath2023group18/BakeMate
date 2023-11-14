@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/card_view"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#81C784"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/item_title1"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:shape="rectangle"
+        android:text="@string/profiless"
+        android:backgroundTint="@color/design_default_color_background"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="68dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="128dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/Profile"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/item_title"
+
+        android:layout_height="50dp"
+        android:layout_marginTop="132dp"
+
+        android:layout_width="400dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="@string/allergies"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/item_title2"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="@string/liked_recipes"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="@+id/item_title"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/item_title3"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="@string/grocery_list"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="@+id/item_title2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/item_title4"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="@string/favorite_picture"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="@+id/item_title3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rectangular_button_background"
+        android:text="@string/profiles"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="678dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rectangular_button_background"
+        android:text="@string/shomes"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="678dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rectangular_button_background"
+        android:text="@string/recipess"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="678dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

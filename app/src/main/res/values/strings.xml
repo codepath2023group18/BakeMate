@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BakeMate</string>
+    <string name="recipes">Recipes</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="profiles">Profile</string>
+    <string name="shomes">Home</string>
+    <string name="recipess">Recipes</string>
+    <string name="allergies">Allergies</string>
+    <string name="liked_recipes">Liked Recipes</string>
+    <string name="grocery_list">Grocery List</string>
+    <string name="favorite_picture">Favorite Picture</string>
+    <string name="profiless">Profile</string>
 </resources>

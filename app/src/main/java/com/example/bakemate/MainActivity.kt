@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         feedImageList = mutableListOf()
         titleList = mutableListOf()
         getRedditData()
+        val secondActbutton = findViewById<Button>(R.id.button1)
+        secondActbutton.setOnClickListener{
+            val Intent = Intent (this, Profile::class.java)
+            startActivity(Intent)
+        }
     }
 
     private fun getRedditData() {

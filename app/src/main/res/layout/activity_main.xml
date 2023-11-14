@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -31,7 +32,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Profile"
+            android:text="@string/profile"
             android:background="@drawable/rectangular_button_background"/>
 
         <Button
@@ -39,7 +40,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Home"
+            android:text="@string/home"
             android:background="@drawable/rectangular_button_background"/>
 
         <Button
@@ -47,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Recipes"
+            android:text="@string/recipes"
             android:background="@drawable/rectangular_button_background"/>
     </LinearLayout>
 
