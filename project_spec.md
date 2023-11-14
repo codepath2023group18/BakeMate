@@ -30,8 +30,8 @@
 ### 1. User Features (Required and Optional)
 
 ***Required Features***
-- Recycler View for recipes
-- View visuals of the baked goods from online sites
+[x] Recycler View for recipes
+[x] View visuals of the baked goods from online sites
 - Search bar for certain recipies
 - Reaction interactions with content (client side)
 
@@ -41,12 +41,12 @@
 - Sort by highest reaction
 - Commenting
 - See nearby grocery stores
-- Create Profile
+[x] Create Profile
 
 ### 2. Chosen API(s)
 
 **list first API endpoint here**
-- Reddit API for content
+[x] Reddit API for content
 - Google API for nearby grocery stores
 - Spoonacular API
 - Edamam API
@@ -79,7 +79,9 @@ Here's a place for any other notes on the app, it's creation
 process, or what you learned this unit!  
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
+<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXA5M21iOGdqb3Z2cDd6a2c0eTlveGNjM3d5aGhwMjNycGRpcXhjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KI9te1gtXPEDKvlXJA/giphy.gif" width=600>
 
+<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXU4a2M0Y2cxMGwxMHltd2c3aDJkdHEzcDluY3o1dG5xZ2R6MHFzciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lbl40K731iaVkclRek/giphy.gif" width=600>
 ## License
 
 Copyright **2023** **Group18**
