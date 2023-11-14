@@ -11,7 +11,6 @@ class Profile : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         // Link buttons
-        // TODO(Link Recipies)
         val profileButton = findViewById<Button>(R.id.profile_button)
         profileButton.setOnClickListener {
             val intent = Intent(this, Profile::class.java)
@@ -22,9 +21,9 @@ class Profile : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-        val recipiesButton = findViewById<Button>(R.id.recipes_button)
-        recipiesButton.setOnClickListener {
-            //val intent = Intent (this, TODO(Add link to recipes page)::class.java)
+        val recipesButton = findViewById<Button>(R.id.recipes_button)
+        recipesButton.setOnClickListener {
+            val intent = Intent (this, RecipeActivity::class.java)
             startActivity(intent)
         }
     }

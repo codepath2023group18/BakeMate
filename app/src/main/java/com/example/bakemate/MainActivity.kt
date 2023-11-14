@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         titleList = mutableListOf()
         getRedditData()
         // Link buttons
-        // TODO(Link Recipies)
         val profileButton = findViewById<Button>(R.id.profile_button)
         profileButton.setOnClickListener{
             val intent = Intent (this, Profile::class.java)
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
         val recipiesButton = findViewById<Button>(R.id.recipes_button)
         recipiesButton.setOnClickListener{
-            //val intent = Intent (this, TODO(Add link to recipes page)::class.java)
+            val intent = Intent (this, RecipeActivity::class.java)
             startActivity(intent)
         }
     }
