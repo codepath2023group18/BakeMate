@@ -43,7 +43,9 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src= "https://i.imgur.com/h4OiQ9i.gif" width=600 alt="App Demo Video">
+
+
+https://github.com/codepath2023group18/BakeMate/assets/106501057/959177ef-0672-4a79-b850-a59b8158ed60
 
 VIDEO created with **CLIPCHAMP**
 
