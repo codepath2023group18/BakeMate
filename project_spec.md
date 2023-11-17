@@ -9,7 +9,7 @@
 
 ## App Overview
 
-### Description 
+### Description
 
 **A social platform dedicated to baking enthusiasts where users can share recipes, tips, and follow their favorite bakers.**
 
@@ -18,35 +18,38 @@
 <!-- Evaluation of your app across the following attributes -->
 
 - **Description:** A social platform dedicated to baking enthusiasts where users can share recipes, tips, and follow their favorite bakers.
-    - **Category:** Social / Lifestyle / Culinary
-    - **Mobile:** Optimal for mobile b/c users can post and view content on the fly.
-    - **Story:** Creating a community for baking aficionados to celebrate the joy of baking, exchange knowledge, and inspire each other.
-    - **Market:** Baking enthusiasts, professional bakers, culinary students, and anyone interested in learning to bake or seeking new recipes.
-    - **Habit:** Users are encouraged to check in daily for new content, share their baking experiences, and connect with the community.
-    - **Scope:** Start with baking content feed then offer basic social networking features with a focus on baking, eventually adding more interactive elements like live baking classes or challenges.
+  - **Category:** Social / Lifestyle / Culinary
+  - **Mobile:** Optimal for mobile b/c users can post and view content on the fly.
+  - **Story:** Creating a community for baking aficionados to celebrate the joy of baking, exchange knowledge, and inspire each other.
+  - **Market:** Baking enthusiasts, professional bakers, culinary students, and anyone interested in learning to bake or seeking new recipes.
+  - **Habit:** Users are encouraged to check in daily for new content, share their baking experiences, and connect with the community.
+  - **Scope:** Start with baking content feed then offer basic social networking features with a focus on baking, eventually adding more interactive elements like live baking classes or challenges.
 
 ## Product Spec
 
 ### 1. User Features (Required and Optional)
 
-***Required Features***
+**_Required Features_**
 [x] Recycler View for recipes
 [x] View visuals of the baked goods from online sites
+
 - Search bar for certain recipies
 - Reaction interactions with content (client side)
 
-***Stretch Features***
+**_Stretch Features_**
+
 - Lookout for data allergies
 - Send Email
 - Sort by highest reaction
 - Commenting
 - See nearby grocery stores
-[x] Create Profile
+  [x] Create Profile
 
 ### 2. Chosen API(s)
 
 **list first API endpoint here**
 [x] Reddit API for content
+
 - Google API for nearby grocery stores
 - Spoonacular API
 - Edamam API
@@ -55,8 +58,9 @@
 
 Required Feature
 **Observe and scroll through content**
-  - => **New Content Appears**
-  - ...
+
+- => **New Content Appears**
+- ...
 - **"Click" on content item**
   - => show more info like the ingredients of the list
 - **Setup user allergies**
@@ -75,13 +79,14 @@ Required Feature
 
 ## Build Notes
 
-Here's a place for any other notes on the app, it's creation 
-process, or what you learned this unit!  
+Here's a place for any other notes on the app, it's creation
+process, or what you learned this unit!
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
-<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXA5M21iOGdqb3Z2cDd6a2c0eTlveGNjM3d5aGhwMjNycGRpcXhjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KI9te1gtXPEDKvlXJA/giphy.gif" width=600>
+<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXA5M21iOGdqb3Z2cDd6a2c0eTlveGNjM3d5aGhwMjNycGRpcXhjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KI9te1gtXPEDKvlXJA/giphy.gif" width=600 alt="Profile Page Demo GIF">
 
-<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXU4a2M0Y2cxMGwxMHltd2c3aDJkdHEzcDluY3o1dG5xZ2R6MHFzciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lbl40K731iaVkclRek/giphy.gif" width=600>
+<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXU4a2M0Y2cxMGwxMHltd2c3aDJkdHEzcDluY3o1dG5xZ2R6MHFzciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lbl40K731iaVkclRek/giphy.gif" width=600 alt="Feed Demo GIF">
+
 ## License
 
 Copyright **2023** **Group18**

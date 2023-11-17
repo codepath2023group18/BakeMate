@@ -1,20 +1,18 @@
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-# AND101 Milestone 1 - **BakeMate**
+# AND101 Milestone 2 - **BakeMate**
 
 Submitted by:
-- **Fany Silva**
-- **Thao Duong**
-- **Adrian Eastmond**
 
-Time spent: **20** hours spent in total
+- Adrian Eastmond
+- Fany Silva
+- Thao Duong
+
+Time spent: **30** hours spent in total
 
 ## Summary
-This app will be able to show images of recipes online and users can create a profile. The app will use an API online to pull images and recipes. The user will be able to provide a reaction to the recipe that they like.
 
-This document provides an overview, project spec, and wireframes for our team's capstone project: An app that **The app will have the option for users to create a custom profile where they can input their recipe and they browse through recipes**
-
-If we had to describe this milestone in three (3) emojis, they would be: **😃 😄 😁**
+This document provides a summary of our project building process for our app, **BakeMate**
 
 ## Milestone Requirements
 
@@ -22,29 +20,36 @@ If we had to describe this milestone in three (3) emojis, they would be: **😃 
 
 The following REQUIRED features are completed:
 
-- [X] Creation of GitHub Organization and Group Project Repo
-- [X] Updated Course Portal group info with Group Name and App Description
+- [x] Assign features to each member of your group
+- [x] Establish a goal time for completing each feature
 
 The following REQUIRED files are included:
 
-- [X] Included 📄 `brainstorming.md`, which contains:
-  - [X] Our initial brainstorming ideas (6+ ideas)
-  - [X] 5-category evaluation of our top 3 ideas
-  - [X] Final app idea chosen
-- [X] Included 📄 `project_spec.md`, which contains:
-  - [X] App Overview: Description and evaluation
-  - [X] App Spec: User features, Chosen API(s), User Interactions
-  - [X] Wireframe image(s)
+- [x] Updated 📄 `project_spec.md`, which contains:
 
-The following BONUS features are implemented:
+  - [x] App Overview (Milestone 1)
+  - [x] App Spec (Milestone 1)
+  - [x] Checked off 2+ completed features
+  - [x] 2+ Videos/GIFs of build progress
 
-- [X] Added digital wireframe/mockup image(s)
-- [ ] Added a Video/GIF of an interactive prototype
+- [x] Our 🎥 Demo Video
+  - [x] We have also added the Demo Video Link to the Group Info Form on the course portal.
 
 The following EXTRA features are implemented:
 
-- [ ] Add a chat option 
+- [ ] List anything else that you added to improve your submission!
+
+## 🎥 Demo Video
+
+Here's a video that demos all of the app's implemented features:
+
+<img src= "https://i.imgur.com/h4OiQ9i.gif" width=600 alt="App Demo Video">
+
+VIDEO created with **CLIPCHAMP**
 
 ## Notes
 
 Here's a place for any other notes on this milestone!
+
+1. We are still working on adding navigations
+2. We have added our API's and profile however we need for the users to be able to add their data manually
